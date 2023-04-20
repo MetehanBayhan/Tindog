@@ -9,6 +9,7 @@ html, body {
 
 body {
   font-size: 1rem;
+  font-family: 'Poppins', sans-serif;
 }
 
 body {
@@ -41,12 +42,12 @@ img {
 /* TYPOGRAPHY */
 
 .user-info {
-  font-size: 4rem;
+  font-size: 2rem;
   margin: 0;
 }
 
 .user-bio {
-  font-size: 3rem;
+  font-size: 1.125rem;
   margin: 0;
 }
 
@@ -64,7 +65,6 @@ img {
 
 .image-wrapper {
   position: relative;
-  
 }
 
 .image-info-wrapper {
@@ -72,6 +72,19 @@ img {
   position: absolute;
   bottom: 2em;
   left: 2em;
+}
+
+.liked {
+  position: absolute;
+  font-size: 4rem;
+  top: 5;
+  left: 15;
+  border: 5px solid linear-gradient(270deg, #29D78A 0%, #6EF2F2 100%);
+  letter-spacing: 2px;
+  font-weight: bold;
+  padding: .1em .3em;
+
+
 }
 
 
@@ -84,11 +97,17 @@ img {
   -webkit-text-fill-color: transparent;
 }
 
+
 .like-btn{
-  background-color: #DBFFF4;
+  
   box-shadow: 0px 10px 20px #CCF1E6;
   padding: 3em;
   border-radius: 50%;
+}
+
+.like-btn:hover,
+.like-btn:focus{
+  background-color: #DBFFF4;
 }
 
 .pass-btn{
@@ -96,6 +115,11 @@ img {
   box-shadow: 0px 10px 20px #E9E9EA; 
   padding: 2.5em 3em;
   border-radius: 50%;
+}
+
+.pass-btn:hover,
+.pass-btn:focus{
+  background: #FFE7EF;
 }
 
 .pass-btn .fa-x{
