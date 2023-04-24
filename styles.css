@@ -27,18 +27,20 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1em;
+  padding: 1em 1em 1em;
   height: 10%;
 }
 
 main {
   width: 100%;
   height: 90%;
-  padding: 1em;
+  padding: 0 1em 1em;
 }
 
 img {
   width: 100%;
+  height: 100%;
+  object-fit: cover;
   border-radius: 25px;
   background-color: white;
 
@@ -71,6 +73,7 @@ img {
 .image-wrapper {
   position: relative;
   width: 100%;
+  height: 75%;
 }
 
 .image-info-wrapper {

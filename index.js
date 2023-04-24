@@ -14,7 +14,6 @@ function render() {
 
 
 
-
 const likeBtn = document.querySelector(".like-btn")
 const passBtn = document.querySelector(".pass-btn")
 
