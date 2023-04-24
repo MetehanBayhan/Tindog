@@ -11,9 +11,10 @@ class Dog {
     return `
     <img src="./${avatar}" alt="">
     <div class="gradient-overlay"></div>
-    <div class="approve-box bg-for-nope">
-      <p class="nope top-left-approve">NOPE</p>
+    <div class="approve-box-wrapper bg-for-liked">
+      <p class="approve-box liked">LIKE</p>
     </div>
+    
     <div class="image-info-wrapper">
         <h2 class="user-info">${name}, ${age}</h2>
         <p class="user-bio">${bio}</p>
