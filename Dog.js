@@ -11,7 +11,9 @@ class Dog {
     return `
     <img src="./${avatar}" alt="">
     <div class="gradient-overlay"></div>
+    <div class="box">
     <p class="liked">LIKE</p>
+    </div>
     <div class="image-info-wrapper">
         <h2 class="user-info">${name}, ${age}</h2>
         <p class="user-bio">${bio}</p>
