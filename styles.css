@@ -108,6 +108,7 @@ img {
   padding: .1em .3em;
   font-size: 3rem;
   width: 40vw;
+  max-width: 175px;
   font-weight: 600;
   margin: 0;
   text-align: center;

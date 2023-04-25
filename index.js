@@ -9,8 +9,10 @@ function getNexDog() {
 }
 
 function render() {
+  console.log(currentDog)
   currentDog = getNexDog()
   document.querySelector(".image-wrapper").innerHTML = currentDog.getDogHtml()
+  
 }
 
 const likeBtn = document.querySelector(".like-btn")
@@ -25,6 +27,8 @@ passBtn.addEventListener('click', () => {
 });
 
 function handleLikeBtn() {
+  disableButtons()
+
   currentDog.hasBeenLiked = true
   currentDog.hasBeenSwiped = true
   document.querySelector(".image-wrapper").innerHTML += `
@@ -35,15 +39,19 @@ function handleLikeBtn() {
 }
 
 function handleNopeBtn() {
+  disableButtons()
   document.querySelector(".image-wrapper").innerHTML += `
   <div class="approve-box-wrapper bg-for-nope">
     <p class="approve-box nope">NOPE</p>
   </div>`
-  currentDog.hasBeenLiked = true
   currentDog.hasBeenSwiped = true
   setTimeout(render, 2000)
 }
 
+function disableButtons() {
+  likeBtn.disable = true
+  passBtn.disable = true
+}
 
 let currentDog = {}
 render()
