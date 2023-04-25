@@ -2,8 +2,6 @@
 import dogs from "./data.js"
 import Dog from "./Dog.js"
 
-const approveBox = document.querySelector(".approve-box")
-
 
 function getNexDog() {
   const nextDogData = dogs.shift()
@@ -13,7 +11,6 @@ function getNexDog() {
 function render() {
   currentDog = getNexDog()
   document.querySelector(".image-wrapper").innerHTML = currentDog.getDogHtml()
-  approveBox.innerHTML = ``
 }
 
 const likeBtn = document.querySelector(".like-btn")
@@ -28,16 +25,20 @@ passBtn.addEventListener('click', () => {
 });
 
 function handleLikeBtn() {
-  approveBox.innerHTML = 
-  approveBox.classList.add("bg-for-like")
   currentDog.hasBeenLiked = true
   currentDog.hasBeenSwiped = true
+  document.querySelector(".image-wrapper").innerHTML += `
+  <div class="approve-box-wrapper bg-for-liked">
+    <p class="approve-box liked">LIKE</p>
+  </div>`
   setTimeout(render, 2000)
 }
 
 function handleNopeBtn() {
-  approveBox.innerHTML = `<p class="nope top-left-approve">NOPE</p>`
-  approveBox.classList.add("bg-for-nope")
+  document.querySelector(".image-wrapper").innerHTML += `
+  <div class="approve-box-wrapper bg-for-nope">
+    <p class="approve-box nope">NOPE</p>
+  </div>`
   currentDog.hasBeenLiked = true
   currentDog.hasBeenSwiped = true
   setTimeout(render, 2000)

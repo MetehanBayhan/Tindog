@@ -11,9 +11,7 @@ class Dog {
     return `
     <img src="./${avatar}" alt="">
     <div class="gradient-overlay"></div>
-    <div class="approve-box-wrapper bg-for-liked">
-      <p class="approve-box liked">LIKE</p>
-    </div>
+    
     
     <div class="image-info-wrapper">
         <h2 class="user-info">${name}, ${age}</h2>
@@ -24,5 +22,7 @@ class Dog {
 
 }
 
-
+/* <div class="approve-box-wrapper bg-for-liked">
+      <p class="approve-box liked">LIKE</p>
+    </div> */
 export default Dog
