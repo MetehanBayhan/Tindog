@@ -31,19 +31,11 @@ function handleLikeBtn() {
 
   currentDog.hasBeenLiked = true
   currentDog.hasBeenSwiped = true
-  document.querySelector(".image-wrapper").innerHTML += `
-  <div class="approve-box-wrapper bg-for-liked">
-    <p class="approve-box liked">LIKE</p>
-  </div>`
   setTimeout(render, 2000)
 }
 
 function handleNopeBtn() {
   disableButtons()
-  document.querySelector(".image-wrapper").innerHTML += `
-  <div class="approve-box-wrapper bg-for-nope">
-    <p class="approve-box nope">NOPE</p>
-  </div>`
   currentDog.hasBeenSwiped = true
   setTimeout(render, 2000)
 }
