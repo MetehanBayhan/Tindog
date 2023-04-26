@@ -9,7 +9,7 @@ class Dog {
   getDogHtml() {
     const {avatar, name, age, bio} = this
     return `
-    <img src="./${avatar}" alt="">
+    <img src="./${avatar}" alt="" class="user-img">
     <div class="gradient-overlay"></div>
     
     

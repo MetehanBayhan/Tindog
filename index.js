@@ -11,7 +11,7 @@ function getNexDog() {
 function render() {
   console.log(currentDog)
   currentDog = getNexDog()
-  document.querySelector(".image-wrapper").innerHTML = currentDog.getDogHtml()
+  document.querySelector(".image-wrapper").innerHTML += currentDog.getDogHtml()
   
 }
 
