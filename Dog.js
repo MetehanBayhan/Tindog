@@ -1,4 +1,3 @@
-// Create the Dog class here
 import dogs from "./data.js"
 
 class Dog {
@@ -20,7 +19,4 @@ class Dog {
 
 }
 
-/* <div class="approve-box-wrapper bg-for-liked">
-      <p class="approve-box liked">LIKE</p>
-    </div> */
 export default Dog
