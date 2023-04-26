@@ -11,9 +11,9 @@ function getNexDog() {
 let currentDog = {}
 function render() {
   if(dogs.length > 0 ){
-    enableSwipeButtons()
     currentDog = getNexDog()
     document.querySelector(".image-wrapper").innerHTML = currentDog.getDogHtml()
+    enableSwipeButtons()
   }else{
     console.log("data is empty");
     disableSwipeButtons()
